@@ -1,12 +1,17 @@
 body {
      background: #4195c3;
 }
+
 li {
      padding: 5px;
-     margin: 5px;
+     margin: 0 auto;
      background: #faebd7;
    }
 
 .container {
- margin: auto;
+     margin: 0 auto;
    }
+
+img {
+     margin: 0 auto;
+}
