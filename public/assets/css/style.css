@@ -1,0 +1,12 @@
+body {
+     background: #4195c3;
+}
+li {
+     padding: 5px;
+     margin: 5px;
+     background: #faebd7;
+   }
+
+.container {
+ margin: auto;
+   }

@@ -1,14 +1,36 @@
-<h1>BURGERS!</h1>
-<!-- tbd -->
+<h1> EAT SUM BURGERZ </h1>
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+<div class = "container">
+<img src="/assets/catburger.jpg" width="200px" height="200" alt="burger.png">
 
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
+<div id="newBurger">
+    <h2>Ze awesome burgers</h2>
+    <ul>
+    {{#each burgers}}
+        {{#unless devoured}}
+        <li>{{burger_name}}<button data-id="{{id}}">Eat eeet!!</button></li>
+        {{/unless}}
+    {{/each}}
+    </ul>
+</div>
 
+<div id="alreadyEaten">
+    <h2>*Munch*</h2>
+    <ul>
+    {{#each burgers}}
+        {{#if devoured}}
+        <li>{{burger_name}}</li> 
+        {{/if}}
+    {{/each}}
+    </ul>
+</div>
 
-  <button type="submit">Add Button</button>
+<br>
+
+<form>
+    <textarea type="text" name="burger"></textarea> 
+    <input type="submit" id="submit" value="Submit"><br>
+    <h4>Yeah add a burger you're cravin' and then hit the "Submit" button</h4>
 </form>
+
+</div>
